@@ -9,4 +9,8 @@ public interface AlumnoService {
 	public abstract List<Alumno> listaAlumno();
 	public abstract List<Alumno> listaAlumnoPorDni(String dni);
 	public abstract List<Alumno> listaAlumnoPorNombreLike(String nombre);
+	public abstract List<Alumno> findByIdAlumno(int id);
+	
+	//Llama a varios repositorios
+	
 }

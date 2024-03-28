@@ -28,6 +28,11 @@ public class AlumnoServiceImpl implements AlumnoService{
 	public List<Alumno> listaAlumnoPorNombreLike(String nombre) {
 		return repository.findByNombreLike(nombre);
 	}
-	
+
+	@Override
+	public List<Alumno> findByIdAlumno(int id) {
+		// TODO Auto-generated method stub
+		return repository.findByIdAlumno(id);
+	}
 
 }
